@@ -14,7 +14,13 @@
     }
     var score = 0;
     var highscore =localStorage.getItem("highscore")
-    document.getElementById("highscore").innerHTML="Highscore :  "+highscore
+    if(highscore===null){
+        document.getElementById("highscore").innerHTML="Highscore : 0"
+    }
+    else{
+        document.getElementById("highscore").innerHTML="Highscore :  "+highscore
+
+    }
     var countscore = setInterval(() => {
         score++;
         document.getElementById("score").innerHTML=score
