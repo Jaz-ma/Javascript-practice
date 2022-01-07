@@ -11,14 +11,14 @@ body{
 #score{
     font: 1em sans-serif;
     left: 32rem;
-    bottom: 2.7rem;
+    bottom: 2.9rem;
     position: relative;
 }
 #highscore{
     font: 1em sans-serif;
     left: 1rem;
     bottom: 4rem;
-    padding-left: 1em;
+    padding-left: 0.3em;
     position: relative;
 }
 #character{
@@ -49,4 +49,13 @@ body{
     30%{top: 100px}
     70%{top: 100px}
     100%{top: 150px}
+}
+@media only screen and (max-width:600px) {
+#game{
+    width: 100vw;
+}
+#score{
+    left: 90vw;
+}
+
 }
