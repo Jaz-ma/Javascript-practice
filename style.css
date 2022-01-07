@@ -4,25 +4,25 @@ body{
 }
 
 #game{
-    width: 600px;
-    height: 200px;
+    width: 35rem;
+    height: 13.4rem;
     border: 1px solid black;
 }
 #score{
     font: 1em sans-serif;
-    left: 560px;
-    bottom: 50px;
+    left: 32rem;
+    bottom: 2.7rem;
     position: relative;
 }
 #highscore{
     font: 1em sans-serif;
-    left: 320x;
-    bottom: 69px;
+    left: 1rem;
+    bottom: 4rem;
     padding-left: 1em;
     position: relative;
 }
 #character{
-    height: 50px;
+    height: 4rem;
     width: 20px;
     background-color: black;
     position: relative;
