@@ -30,6 +30,10 @@ body{
 }
 .animate{
     animation: jump 500ms ease-in-out;
+    -webkit-animation: jump 500ms ease-in-out;
+    -ms-animation: jump 500ms ease-in-out;
+    -moz-animation: jump 500ms ease-in-out;
+    -o-animation: jump 500ms ease-in-out;
 }
 #block{
     width: 20px;
@@ -39,6 +43,10 @@ body{
     top: 130px;
     left: 580px;
     animation: block 1s infinite linear;
+    -webkit-animation: block 1s infinite linear;
+    -moz-animation: block 1s infinite linear;
+    -ms-animation: block 1s infinite linear;
+    -o-animation: block 1s infinite linear;
 }
 @keyframes block {
     0%{left: 580px;}
