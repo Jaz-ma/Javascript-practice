@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
    
     let pos = 580;    
     function frame() {
@@ -11,9 +11,7 @@
     }
     id = setInterval(frame, 1);
     let bob = document.getElementById("character")
-=======
 let bob = document.getElementById("character")
->>>>>>> 9120867f5b526faaa64bbd98b7bbb6cc99325458
     let block = document.getElementById("block")
     function jump(){
         if (character.classList.contains("animate")){return}
@@ -49,11 +47,8 @@ window.addEventListener("load", function(event) {
             }
             if(confirm('You lose \n \n Score : '+ score+' \n \n Play Again?')){
                 location.reload();
-<<<<<<< HEAD
                 pos= 580;
-=======
                 return
->>>>>>> 9120867f5b526faaa64bbd98b7bbb6cc99325458
             }
             else{
                 block.style.animation = "none"
