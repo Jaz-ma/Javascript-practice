@@ -1,7 +1,4 @@
-window.addEventListener("load", function(event) {
-   
-    
-    let bob = document.getElementById("character")
+let bob = document.getElementById("character")
     let block = document.getElementById("block")
     function jump(){
         if (character.classList.contains("animate")){return}
@@ -13,6 +10,7 @@ window.addEventListener("load", function(event) {
            bob.classList.remove("animate")
         }, 500);
     }
+window.addEventListener("load", function(event) {
     var score = 0;
     var highscore =localStorage.getItem("highscore")
     if(highscore===null){
@@ -54,9 +52,9 @@ window.addEventListener("load", function(event) {
 
 
   });
-document.addEventListener("keypress", function(event) {
-        if (event.key == ' ') {
-          jump()
-        }
-      });
+  document.addEventListener("keypress", function(event) {
+    if (event.key == ' ') {
+      jump()
+    }
+  });
    
