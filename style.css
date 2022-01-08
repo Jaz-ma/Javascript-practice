@@ -42,11 +42,11 @@ body{
     position: relative;
     top: 130px;
     left: 580px;
-    animation: block 1s infinite linear;
+    /*animation: block 1s infinite linear;
     -webkit-animation: block 1s infinite linear;
     -moz-animation: block 1s infinite linear;
     -ms-animation: block 1s infinite linear;
-    -o-animation: block 1s infinite linear;
+    -o-animation: block 1s infinite linear;*/
 }
 @keyframes block {
     0%{left: 580px;}

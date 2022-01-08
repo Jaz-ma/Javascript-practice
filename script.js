@@ -1,5 +1,14 @@
-
    
+    let pos = 580;    
+    function frame() {
+      if (pos == -4) {
+          pos= 580;
+      } else {
+        pos--; 
+        block.style.left = pos + 'px'; 
+      }
+    }
+    id = setInterval(frame, 1);
     let bob = document.getElementById("character")
     let block = document.getElementById("block")
     function jump(){
@@ -29,12 +38,13 @@
         var characterTop= parseInt(window.getComputedStyle(character).getPropertyValue("top"));
         var blocKleft= parseInt(window.getComputedStyle(block).getPropertyValue("left"));
       
-        if(blocKleft<20 && blocKleft>0 && characterTop>=130){
+        if(blocKleft<20 && blocKleft>-4 && characterTop>=140){
             if( score>=highscore){
                 localStorage.setItem("highscore",score)
             }
             if(confirm('You lose \n \n Score : '+ score+' \n \n Play Again?')){
                 location.reload();
+                pos= 580;
             }
             else{
                 block.style.animation = "none"
