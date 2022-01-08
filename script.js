@@ -34,10 +34,12 @@ window.addEventListener("load", function(event) {
             }
             if(confirm('You lose \n \n Score : '+ score+' \n \n Play Again?')){
                 location.reload();
+                return
             }
             else{
                 block.style.animation = "none"
                 clearInterval(countscore)
+                return
             }            
         }
     }, 10);
