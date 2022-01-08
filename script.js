@@ -47,15 +47,16 @@ window.addEventListener("load", function(event) {
 
 
     /************************* */
-    document.addEventListener("keypress", function(event) {
-        if (event.key == ' ') {
-          jump()
-        }
-      });
+    
  
 
 
 
 
   });
+document.addEventListener("keypress", function(event) {
+        if (event.key == ' ') {
+          jump()
+        }
+      });
    
