@@ -1,5 +1,6 @@
-
+window.addEventListener("load", function(event) {
    
+    
     let bob = document.getElementById("character")
     let block = document.getElementById("block")
     function jump(){
@@ -42,9 +43,19 @@
             }            
         }
     }, 10);
+
+
+
+    /************************* */
     document.addEventListener("keypress", function(event) {
         if (event.key == ' ') {
           jump()
         }
       });
  
+
+
+
+
+  });
+   
