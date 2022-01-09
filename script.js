@@ -7,7 +7,7 @@ function frame() {
     block.style.left = pos + 'px'; 
   }
 }
-id = setInterval(frame, 1);
+var id = setInterval(frame, 1);
 let bob = document.getElementById("character")
 let block = document.getElementById("block")
 function jump(){
@@ -46,8 +46,10 @@ var countscore = setInterval(() => {
             pos= 580;
         }
         else{
-            block.style.animation = "none"
             clearInterval(countscore)
+            clearInterval(id)
+            block.style.left = 580 +'px'; 
+
         }            
     }
 }, 10);
