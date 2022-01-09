@@ -1,3 +1,9 @@
+var requestAnimationFrame = window.requestAnimationFrame || 
+window.mozRequestAnimationFrame || 
+window.webkitRequestAnimationFrame ||
+window.msRequestAnimationFrame;
+
+window.requestAnimationFrame = requestAnimationFrame;
 //grabbing the elements
 let bob = document.getElementById("character")
 let block = document.getElementById("block")
@@ -77,4 +83,5 @@ document.addEventListener("keypress", function(event) {
       jump()
     }
   });
-
+  requestAnimationFrame(frame);
+  requestAnimationFrame(jump);
