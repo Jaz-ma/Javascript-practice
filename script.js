@@ -49,7 +49,8 @@ var countscore = setInterval(() => {
             clearInterval(countscore)
             clearInterval(id)
             block.style.left = 580 +'px'; 
-
+            highscore = localStorage.getItem("highscore")
+            document.getElementById("highscore").innerHTML="Highscore :  "+highscore
         }            
     }
 }, 10);
